@@ -1,0 +1,6 @@
+1. Diferença entre máquina virtual e contêiner:
+A máquina virtual virtualiza o hardware e roda um sistema operacional completo próprio, sendo mais pesada e lenta para iniciar. O contêiner compartilha o kernel do sistema operacional hospedeiro, isolando apenas a aplicação e suas dependências, o que o torna muito mais leve e rápido.
+2. Diferença entre imagem Docker e contêiner:
+A imagem é um modelo estático, somente leitura, com tudo que a aplicação precisa (código, bibliotecas, configurações). O contêiner é a instância em execução dessa imagem — quando você roda docker run, o Docker cria um contêiner a partir da imagem.
+3. Por que contêineres são interessantes em ambientes de nuvem:
+Eles são leves, portáteis e sobem/descem rapidamente, facilitando escalabilidade automática e uso eficiente de recursos. Como empacotam a aplicação com suas dependências, garantem que ela rode do mesmo jeito em qualquer ambiente, o que combina muito bem com a elasticidade e a orquestração (ex: Kubernetes) exigidas na nuvem.
